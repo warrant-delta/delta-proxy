@@ -1,7 +1,7 @@
 body {
-    background-color: #0a0a0a; /* Matte black background */
+    background-color: #0a0a0a;
     color: white;
-    font-family: 'Black Han Sans', sans-serif; /* Custom font */
+    font-family: 'Black Han Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,22 +9,21 @@ body {
     height: 100vh;
 }
 
-input, button {
-    border-radius: 8px;  /* Rounded corners */
-}
-
 input {
     width: 60%;
-    padding: 12px;
+    padding: 10px;
     border: none;
+    border-radius: 15px; /* Rounded corners */
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 button {
     margin-top: 10px;
-    padding: 12px;
+    padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 15px; /* Rounded corners */
 }
 
 iframe {
@@ -32,16 +31,9 @@ iframe {
     height: 80vh;
     border: none;
     margin-top: 20px;
-    border-radius: 8px;  /* Rounded corners */
-    transition: margin-top 0.5s ease;  /* Smooth transition */
 }
 
-#search {
-    transition: top 0.5s ease; /* Smooth transition for top position */
-}
-
-#loading-indicator {
-    color: white;
-    font-size: 20px;
-    margin-top: 20px;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
