@@ -1,7 +1,7 @@
 body {
-    background-color: #0a0a0a;
+    background-color: #0a0a0a; /* Matte black background */
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Black Han Sans', sans-serif; /* Custom font */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,17 +9,20 @@ body {
     height: 100vh;
 }
 
+input, button {
+    border-radius: 8px;  /* Rounded corners */
+}
+
 input {
     width: 60%;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
 }
 
 button {
     margin-top: 10px;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -28,5 +31,17 @@ iframe {
     width: 90%;
     height: 80vh;
     border: none;
+    margin-top: 20px;
+    border-radius: 8px;  /* Rounded corners */
+    transition: margin-top 0.5s ease;  /* Smooth transition */
+}
+
+#search {
+    transition: top 0.5s ease; /* Smooth transition for top position */
+}
+
+#loading-indicator {
+    color: white;
+    font-size: 20px;
     margin-top: 20px;
 }

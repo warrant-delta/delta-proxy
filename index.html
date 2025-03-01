@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delta Proxy</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1>Delta Proxy</h1>
-    <input type="text" id="search" placeholder="Enter URL or search term...">
+    <input type="text" id="search" placeholder="Enter URL or search term..." />
     <button onclick="search()">Go</button>
+    <div id="loading-indicator" style="display:none;">Loading...</div>
     <iframe id="browser" style="display:none;"></iframe>
 
     <script src="script.js"></script>
 </body>
+
 </html>
